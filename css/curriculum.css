@@ -1,0 +1,137 @@
+:root {
+    --principal-color: #00FA9A;
+    --secondary-color: #070e18;
+}
+
+*{
+    margin: 0;
+}
+
+@media screen and (max-width:64em){
+    
+    .detalhes-sobreMim {
+        flex-wrap: wrap;
+    }
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.centralizar {
+    width: 80%;
+    margin: auto;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    background-color: #070e18;
+    width: 100vw;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: var(--principal-color);
+    text-transform: uppercase;
+}
+
+.header-navigation a:hover {
+    border-bottom: 0.0625em solid var(--principal-color);
+}
+
+.header-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.minhaFoto {
+    width: 9.375em;
+    height: 9.375em;
+    border: 0.1875em solid var(--principal-color);
+    border-radius: 50%;
+    margin-top: 1.5em;
+}
+
+.meuNome {
+    font-size: 1.875em;
+}
+
+.detalhes-sobreMim {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.detalhes-sobreMim section {
+    border: 2px var(--principal-color) solid;
+    border-radius: 1em;
+    width: 20em;
+    height: 20em;
+    padding: 0.625em;
+}
+
+.detalhes-sobreMim section h2 {
+    margin: 1em 0;
+}
+
+.scroller{
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scrollbar-color: tomato;
+}
+
+::-webkit-scrollbar-track {
+    color: rgb;
+}
+
+svg {
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.idiomas-proeficiencia {
+    display: flex;
+    gap: 1.25em;
+}
+
+.idiomas-bandeira {
+    width: 2.125em;
+    height: 2.125em;
+    margin-bottom: 0.625em;
+    border-radius: 50%;
+}
+
+.footer {
+    width: 100vw;
+    height: 9.375em;
+    background-color: var(--secondary-color);
+    margin-top: 0.9375em;
+}
+
+.footer h1 {
+    text-transform: uppercase;
+    color: var(--principal-color);
+    text-align: center;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer-redes img{
+    width: 3.25em;
+}
