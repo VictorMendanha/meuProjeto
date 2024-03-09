@@ -1,0 +1,17 @@
+@media screen and (max-width: 54.9375em) {
+
+    .detalhes-sobreMim section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:64em){
+    
+    .header-navigation ul{
+        text-align: center;
+    }
+
+    .detalhes-sobreMim {
+        flex-wrap: wrap;
+    }
+}

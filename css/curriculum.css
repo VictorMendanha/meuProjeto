@@ -7,12 +7,6 @@
     margin: 0;
 }
 
-@media screen and (max-width:64em){
-    
-    .detalhes-sobreMim {
-        flex-wrap: wrap;
-    }
-}
 
 body {
     background-color: rgb(39, 39, 39);
