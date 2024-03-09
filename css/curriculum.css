@@ -26,22 +26,36 @@ body {
     margin: auto;
 }
 
-.header-navigation {
+.header-navigation ul{
     display: flex;
     align-items: center;
     height: 5em;
     background-color: #070e18;
     width: 100vw;
+    list-style-type: none;
+    gap: 2.5em;
 }
 
 .header-navigation a {
     text-decoration: none;
     color: var(--principal-color);
     text-transform: uppercase;
+    position: relative;
 }
 
-.header-navigation a:hover {
-    border-bottom: 0.0625em solid var(--principal-color);
+.header-navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.125em;
+    background-color: var(--principal-color);
+    transition: width .6s ease-in-out;
+}
+
+.header-navigation a:hover::before {
+    width: 100%;
 }
 
 .header-apresentacao {
