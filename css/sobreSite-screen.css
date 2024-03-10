@@ -1,0 +1,16 @@
+@media screen and (max-width:64em){
+
+    :root {
+        --principal-color: #00FA9A;
+        --secondary-color: #070e18;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .detalhes-sobreMim {
+        flex-wrap: wrap;
+    }
+}

@@ -1,17 +1,10 @@
 :root {
     --principal-color: #00FA9A;
+    --secondary-color: #070e18;
 }
 
 * {
     margin: 0;
-    border: none;
-}
-
-@media screen and (max-width:64em){
-    
-    .detalhes-sobreMim {
-        flex-wrap: wrap;
-    }
 }
 
 body {
@@ -25,31 +18,52 @@ body {
     margin: auto;
 }
 
-.header-navigation {
-    display: flex;
-    margin-top: 3.125em;
+.header {
+    background-color: var(--secondary-color);
+    height: 5em;
 }
 
-.header-navigation a {
+.header-navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-navigation ul a {
     text-decoration: none;
     color: var(--principal-color);
     text-transform: uppercase;
+    position: relative;
 }
 
-.header-navigation a:hover {
-    border-bottom: 0.0625em solid var(--principal-color);
+.header-navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.125em;
+    background-color: var(--principal-color);
+    transition: width .6s ease-in-out;
+}
+
+.header-navigation a:hover::before {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 25.6em;
 }
 
 .sobre-site {
-    margin-top: 1.25em;
     border: 0.125em solid var(--principal-color);
     border-radius: 1em;
     padding: 0.625em;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 9.375em;
     background-color: #070e18;
